@@ -24,22 +24,15 @@
 
 В следующих случаях в словарь info добавляются следующие значения под ключом 'error':
 1. "Пароли не совпадают" - если не совпали введённые пароли.
-   
-![image](https://github.com/user-attachments/assets/45ae5b5a-fb01-48b3-8beb-05abda32ed79)
-3. 'Вы должны быть старше 18', если возраст меньше 18.
-4. 'Пользователь уже существует', если username есть в users.
+2. 'Вы должны быть старше 18', если возраст меньше 18.
+3. 'Пользователь уже существует', если username есть в users.
 
 Соответственно выводится значение переменной "error" в шаблоне:
-
+![image](https://github.com/user-attachments/assets/45ae5b5a-fb01-48b3-8beb-05abda32ed79)
 ![image](https://github.com/user-attachments/assets/371f632a-a1ac-411d-8d64-b5f9dbf769ec)
 ![image](https://github.com/user-attachments/assets/a0c03886-27b9-4471-8e88-c23f44ee900c)
 
-
-
-
-
-
-
-
-
-
+-----------------------------------------------
+Представления запускаются по маршрутам, описанным в файле "urls.py" папки с настройками проекта Django:
+path('', sign_up_by_html),
+path('django_sign_up/', sign_up_by_django)
